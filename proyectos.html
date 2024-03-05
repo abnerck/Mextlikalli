@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <!-- Incluye Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos anteriores ... */
+
+    body {
+      background-image: url('desk.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .nav-link {
+      color: black;
+    }
+
+    .navbar-brand {
+      color: black;
+    }
+
+    .contenedor-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      width: 100%;
+      height: 100%;
+      grid-gap: 10px;
+    }
+
+    .grid-item1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item1::before {
+  content: "Espacios reducidos";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item1:hover::before {
+  opacity: 1;
+}
+
+.grid-item1 {
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.grid-item2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item2::before {
+  content: "Interiores";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item2:hover::before {
+  opacity: 1;
+}
+    .grid-item2 {
+      background-image: url(3.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 1/2;
+      grid-row: 2/5;
+    }
+
+    .grid-item3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item3::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item3:hover::before {
+  opacity: 1;
+}
+
+    .grid-item3 {
+      background-image: url(5.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 1/5;
+      grid-row: 5/5;
+    }
+
+    
+    .grid-item4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item4::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item4:hover::before {
+  opacity: 1;
+}
+    .grid-item4 {
+      background-image: url(7.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 2/4;
+      grid-row: 2/5;
+    }
+
+    
+    .grid-item5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item5::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item5:hover::before {
+  opacity: 1;
+}
+
+    .grid-item5 {
+      background-image: url(8.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 4/6;
+      grid-row: 1/3;
+    }
+
+    
+    .grid-item6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item6::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item6:hover::before {
+  opacity: 1;
+}
+    .grid-item6 {
+      background-image: url(sala.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 4/5;
+      grid-row: 3/5;
+    }
+
+    
+    .grid-item7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item7::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item7:hover::before {
+  opacity: 1;
+}
+    .grid-item7 {
+      background-image: url(sanMarcos.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 5/6;
+      grid-row: 3/6;
+    }
+
+    
+    .grid-item8 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item8::before {
+  content: "Introduce texto aqui";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item8:hover::before {
+  opacity: 1;
+}
+
+    .grid-item8 {
+      background-image: url(sushiTeriyaki.jpg);
+      background-size: cover;
+      background-position: center;
+      grid-column: 6/8;
+      grid-row: 1/6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Importa las fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* Aplica la fuente a la clase h2 */
+    .custom-h1 {
+      font-family: "Namdhinggo", serif;
+      font-weight: 1000;
+      font-style: normal;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+  <style>
+    .bungee-inline-regular {
+      font-family: "Bungee Inline", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: xx-large;
+    }
+  </style>
+
+  <header>
+
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <h1 class="bungee-inline-regular">MEXTLIKALLI</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/proyectos.html" style="font-size: 1.2em;">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/nosotros.html" style="font-size: 1.2em;">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html" style="font-size: 1.2em;">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="grid">
+    <div class="grid-item1"></div>
+    <div class="grid-item2"></div>
+    <div class="grid-item3" onclick="mostrarDescripcion('Casa amueblada')">
+      <div class="grid-item3"></div>
+      <div class="descripcion">
+        Casa amueblada
+      </div>
+    </div>
+    
+    <div class="grid-item4"></div>
+    <div class="grid-item5"></div>
+    <div class="grid-item6"></div>
+    <div class="grid-item7"></div>
+    <div class="grid-item8"></div>
+  </div>
+
+  <br><br><br>
+
+  <!-- Incluye Bootstrap JS y Popper.js (necesarios para algunos componentes de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="footer-container">
+        <div>
+            <p>&copy; 2024 MEXTLIKALLI</p>
+            <p>Contacto: 735 184 4700</p>
+        </div>
+        <a href="https://wa.me/7774403046" target="_blank">
+            <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64"
+                alt="Whatsapp"
+                onclick="window.location.href='https://wa.me/527774403046?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

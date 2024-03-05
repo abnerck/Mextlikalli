@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mextlikalli</title>
+    <!-- Incluye Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Importa las fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        /* Aplica la fuente a la clase h2 */
+        .custom-h1 {
+            font-family: "Namdhinggo", serif;
+            font-weight: 1000;
+            font-style: normal;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .bungee-inline-regular {
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: xx-large;
+        }
+
+        .kodfun-galeri {
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+            overflow: hidden;
+        }
+
+        .kodfun-galeri>div {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: flex 0.8s cubic-bezier(.25, 4, 0.45, 1.4), transform 0.8s cubic-bezier(.25, 4, 0.45, 1.4);
+        }
+
+        .kodfun-galeri>div:hover {
+            flex: 5;
+            transform: scale(1.1);
+        }
+
+        body {
+            background-image: url('desk.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .navbar-brand {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Contenido del encabezado aquí -->
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <h1 class="bungee-inline-regular">MEXTLIKALLI</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/proyectos.html" style="font-size: 1.2em;">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros.html" style="font-size: 1.2em;">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html" style="font-size: 1.2em;">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <center>
+            <h2 class="bungee-inline-regular">MEXTLIKALLI</h2>
+        </center>
+
+        <br><br>
+
+        <div class="kodfun-galeri">
+            <div style="background-image: url('5.jpg');"></div>
+            <div style="background-image: url('3.jpg');"></div>
+            <div style="background-image: url('7.jpg');"></div>
+            <div style="background-image: url('8.jpg');"></div>
+            <div style="background-image: url('9-2.jpg');"></div>
+            <div style="background-image: url('prueba\ iluminacion\ buena.jpg');"></div>
+        </div>
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="footer-container">
+            <div>
+                <p>&copy; 2024 MEXTLIKALLI</p>
+                <p>Contacto: 735 184 4700</p>
+            </div>
+            <a href="https://wa.me/7774403046" target="_blank">
+                <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64"
+                    alt="Whatsapp"
+                    onclick="window.location.href='https://wa.me/527774403046?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Incluye Bootstrap JS y Popper.js (necesarios para algunos componentes de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
