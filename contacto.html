@@ -2,6 +2,18 @@
 <html lang="es">
 
 <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYGDGRBC8F"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+  
+          gtag('config', 'G-MYGDGRBC8F');
+      </script>
+    <!-- Agrega estas líneas a la sección head -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
@@ -64,7 +76,161 @@
         .navbar-brand {
             color: black;
         }
+        /* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+  background-color: #ab4493; 
+}
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #ab4493; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+/* creado por javiniguez.com, Julio 2019 */
     </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Selecciona el formulario por su ID
+      var formulario = document.getElementById('miFormulario');
+  
+      formulario.addEventListener('submit', function (event) {
+        // Previene el envío del formulario por defecto
+        event.preventDefault();
+  
+        // Muestra SweetAlert al enviar el formulario
+        Swal.fire({
+          title: '¡Datos enviados correctamente!',
+          text: 'Gracias por contactarnos.',
+          icon: 'success',
+          confirmButtonText: 'Aceptar'
+        }).then((result) => {
+          // Si se hace clic en "Aceptar", envía el formulario
+          if (result.isConfirmed) {
+            formulario.submit();
+          }
+        });
+      });
+    });
+  </script>
 
 </head>
 
@@ -103,7 +269,7 @@
     </style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">
+            <a class="navbar-brand" href="/Mextlikalli/index.html">
                 <h1 class="bungee-inline-regular">MEXTLIKALLI</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -114,24 +280,98 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto"> <!-- Utiliza navbar-nav y ml-auto para alinear a la derecha -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/proyectos.html" style="font-size: 1.2em;">Proyectos</a>
+                        <a class="nav-link  bungee-inline-regular" href="/Mextlikalli/proyectos.html"
+                            style="font-size: 1.2em;">Proyectos</a>
                         <!-- Ajusta el tamaño del texto según tus necesidades -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/nosotros.html" style="font-size: 1.2em;">Nosotros</a>
+                        <a class="nav-link bungee-inline-regular" href="/Mextlikalli/nosotros.html"
+                            style="font-size: 1.2em;">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contacto.html" style="font-size: 1.2em;">Contacto</a>
+                        <a class="nav-link bungee-inline-regular" href="/Mextlikalli/contacto.html"
+                            style="font-size: 1.2em;">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="container">
+        <title>Formulario de contacto</title>
 
-        <fieldset>
-            <img src="wasa.jpg" alt="">
-        </fieldset>
+        <!-- Enlace al documento css. no aplicable en codepen.
+        <link rel="stylesheet" type="text/css" href="contact-form.css">
+      -->
+
+        </head>
+
+
+        <body>
+
+            <!-- formulario de contacto en html y css -->
+
+            <div class="contact_form">
+
+                <div class="formulario">
+                    <h1>Formulario de contacto</h1>
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+                    <form action="bd.php" method="post"  id="miFormulario">
+
+
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email">
+                        </p>
+
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono"
+                                placeholder="Escribe tu teléfono">
+                        </p>
+
+                      
+
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                placeholder="Escribe un asunto">
+                        </p>
+
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
 
     </main>
 
@@ -142,9 +382,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-
-</html>
-<footer class="bg-dark text-white text-center py-3 fixed-bottom">
+<footer class="bg-dark text-white text-center py-3">
     <div class="footer-container">
         <div>
             <p>&copy; 2024 MEXTLIKALLI</p>
@@ -157,3 +395,4 @@
         </a>
     </div>
 </footer>
+</html>
