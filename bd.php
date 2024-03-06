@@ -29,10 +29,10 @@ $stmt->bind_param('sssss', $nombre, $email, $telefono, $asunto, $mensaje);
 // Ejecutar la consulta
 if ($stmt->execute()) {
     // Mensaje de éxito
-    
+    //echo "¡Datos enviados correctamente!";
     
     // Redirigir a index.html después de 2 segundos
-    header("refresh:2;url=/index.html");
+    header("refresh:2;url=index.html");
 } else {
     // En caso de error, mostrar el mensaje de error
     echo "Error: " . $stmt->error;
